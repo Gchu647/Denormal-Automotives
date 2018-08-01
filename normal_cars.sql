@@ -55,9 +55,12 @@ ALTER TABLE car_models_id
   ADD CONSTRAINT model_id
     FOREIGN KEY (model_id)
     REFERENCES model_id_table(model_id);
+-- this only sets up the foreign keys, I need to populate the table.
 
 INSERT INTO car_models_id(year, make_code, make_title, model_code, model_title)
 SELECT DISTINCT year, make_code, make_title, model_code, model_title
 FROM car_models
 ORDER BY 
   year ASC;
+
+-- add an update command to populate the tables
