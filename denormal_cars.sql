@@ -1,6 +1,3 @@
--- CREATE USER denormal_user;
--- CREATE DATABASE denormal_cars OWNER denormal_user;
-
 -- 5) There are (71) different makes(brand) of cars
 -- SELECT DISTINCT make_title
 -- FROM car_models;
@@ -17,6 +14,6 @@
 -- WHERE make_code='LAM';
 
 -- 8) listing car models between 2010 and 2015
-SELECT DISTINCT *
-FROM car_models
-WHERE year BETWEEN 2010 AND 2015;
+-- SELECT DISTINCT *
+-- FROM car_models
+-- WHERE year BETWEEN 2010 AND 2015;
